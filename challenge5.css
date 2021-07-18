@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    padding: 100px 100px 0 100px;
+}
+
+.header {
+    text-align: center;
+    padding: 0 28%;
+}
+
+.header h1:first-of-type{
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+}
+
+.header h1:last-of-type {
+    color: hsl(234, 12%, 34%);
+}
+
+.header p {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: hsl(229, 6%, 66%);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cards > div {
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -2px rgba(1, 80, 199, 0.2);
+    padding: 30px 40px;
+    border-top: 4px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .first-card {
+    grid-row: span 2;
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+.cards .second-card {
+    border-top-color: hsl(0, 78%, 62%);
+}
+
+.cards .third-card {
+    grid-row: span 2;
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+.cards .last-card {
+    border-top-color: hsl(34, 97%, 64%);
+}
+
+
+.cards h3 {
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+
+.cards p {
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 50px;
+}
+
+.cards img {
+    align-self: flex-end;
+}
+
+@media (max-width: 834px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .container {
+        padding: 100px 20px 0 20px;
+    }
+    
+    .header {
+        padding: 0;
+        font-size: 11px;
+    }
+    
+    .header h1:first-of-type{
+        color: hsl(234, 12%, 34%);
+        font-weight: 200;
+    }
+    
+    .header h1:last-of-type {
+        color: hsl(234, 12%, 34%);
+    }
+    
+    .header p {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        padding: 0 20px;
+        color: hsl(229, 6%, 66%);
+        font-size: 13px;
+    }
+    
+    .cards {
+        display: block;
+        padding: 0 15px;
+    }
+    
+    .cards > div {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .cards h3 {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .cards p {
+        margin-bottom: 50px;
+    }
+    
+    .cards img {
+        align-self: flex-end;
+    }
+    
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 20px 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
